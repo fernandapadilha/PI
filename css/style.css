@@ -30,7 +30,7 @@ header {
 h1 {
     padding-top: 10px;
     padding-bottom: 5px;
-    text-align: center;
+    text-align: center;    
 }
 
 .bx-medal {
@@ -134,10 +134,13 @@ div {
     color: white;
 }
 
+
 main {
     display: grid;
     grid-template-columns: 3fr 1fr 1.5fr;
     margin: 25px 100px 25px 100px;
+
+
 }
 
 .bx-menu {
@@ -200,60 +203,4 @@ p {
 
 #imagem-secundaria {
     margin: 2%;
-}
-
-.show-menu {
-    cursor: pointer;
-}
-
-input.checkbox-menu[type="checkbox"] {
-    display: none;
-    -webkit-appearance: none;
-}
-
-input.checkbox-menu[type="checkbox"]:checked~div.menu-block {
-    opacity: 1;
-    visibility: visible;
-}
-
-.nav-icon {
-    display: inline-block;
-    font-size: 1.5em;
-    padding: 0.5em;
-    vertical-align: middle;
-}
-
-.menu-block {
-    display: inline-block;
-    opacity: 0;
-    vertical-align: middle;
-    visibility: hidden;
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    -ms-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-}
-
-ul.navUL {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul.navUL li {
-    display: inline-block;
-    padding: 0px 5px;
-}
-
-ul.navUL li a {
-    color: #999999;
-    display: block;
-    padding: 3px;
-    text-decoration: none;
-}
-
-ul.navUL li a:hover {
-    color: #000000;
-    text-decoration: none;
 }
