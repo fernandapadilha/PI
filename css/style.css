@@ -2,12 +2,13 @@
 
 @import url();
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     font-family: 'Roboto', sans-serif;
 }
-:root{
+
+:root {
     --cor-principal: #2953A6;
     --cor-fonte: black;
     --cor-fundo: white;
@@ -15,154 +16,244 @@
     --cor-terciaria: #607EA6;
     --cor-quartenaria: #00065C;
 }
-header{
+
+header {
     display: grid;
     background-color: #021F59;
     box-shadow: 0px 3px 10px white;
 }
-.bx-medal{
-    display: flex;
+
+#logo {
+    height: 60px;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.bx-medal {
+    display: none;
     margin-left: 100%;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 6rem;
 }
-div{
+
+div {
     margin-top: 10px;
     text-align: center;
 }
-#margem{
+
+#margem {
     text-align: justify;
     margin-left: 25%;
     margin-right: 5%;
     height: 100px;
     margin-top: 2%;
 }
-#imagem{
+
+#imagem {
     border-radius: 5%;
-    margin: 1% ;
+    margin: 1%;
     margin-top: 5%;
     margin-bottom: 5%;
-    
+
 }
-#tituloprincipal{
-    margin-top: 11%;
+
+#tituloprincipal {
     color: white;
 }
 
-.mobile-menu{
+.mobile-menu {
     display: none;
     background-color: #00065C;
     color: white;
- }
+}
+
 @media screen {
-    .nav-bar{
+    .nav-bar {
         padding: 1.5rem;
         height: 70px;
     }
-    .mobile-menu-icon{
+
+    .mobile-menu-icon {
         display: block;
     }
-    .mobile-menu-icon button{
+
+    .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
-   .mobile-menu ul{
-    font-family: 'Roboto', sans-serif white;
-    display: flex;
-    align-items: center;
-    margin-left: 700px;
-    width: 98%;
-   }
-    .mobile-menu .nav-item{
+
+    .mobile-menu ul {
+        font-family: 'Roboto', sans-serif white;
+        display: flex;
+        align-items: center;
+        margin-left: 700px;
+        width: 98%;
+    }
+
+    .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
     }
-    .mobile-menu .mobile-menu-icon{
+
+    .mobile-menu .mobile-menu-icon {
         display: block;
-        padding: 1rem ;
+        padding: 1rem;
     }
-    .mobile-menu .mobile-menu-icon button{
+
+    .mobile-menu .mobile-menu-icon button {
         width: 25%;
     }
 }
-.nav-item{
-  margin: 0 15px;
-  margin-bottom: 1rem;
+
+.nav-item {
+    margin: 0 15px;
+    margin-bottom: 1rem;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     font-size: 1.15rem;
     color: white;
     font-weight: 400;
 }
-.open{
+
+.open {
     display: block;
 }
-#cortitulo2{
+
+#cortitulo2 {
     color: white;
 }
 
-
-main{
+main {
     display: grid;
     grid-template-columns: 3fr 1fr 1.5fr;
     margin: 25px 100px 25px 100px;
-    
-    
 }
-.bx-menu{
+
+.bx-menu {
     margin: 20px;
     font-size: 45px;
     color: white;
 
 }
-.bx-medal{
+
+.bx-medal {
     margin: 20px;
     font-size: 45px;
     color: white;
 }
-p{
+
+p {
     font-size: 19px;
 }
-#cortitulo{
+
+#cortitulo {
     color: #2953A6;
 }
-#tamanho{
- height: 100px;
+
+#tamanho {
+    height: 100px;
 }
-#botao{
+
+#botao {
     text-align: center;
     color: beige;
     background-color: #607EA6;
     text-decoration: none;
     font-size: 20px;
     margin-right: 20px;
-    border: 1px solid #607EA6 ;
+    border: 1px solid #607EA6;
     border-radius: 10px;
-} 
-#imagempropaganda{
+}
+
+#imagempropaganda {
     border-radius: 5%;
     margin-top: 60px;
 }
 
-#main-secundario{
+#main-secundario {
     display: grid;
     grid-template-columns: 4fr 1.5fr;
     margin: 25px 100px 25px 100px;
 }
-#texto-secundario{
+
+#texto-secundario {
     text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
 }
-#color2{
+
+#color2 {
     color: #021F59;
 }
-#imagem-secundaria{
+
+#imagem-secundaria {
     margin: 2%;
+}
+
+.show-menu {
+    cursor: pointer;
+}
+
+input.checkbox-menu[type="checkbox"] {
+    display: none;
+    -webkit-appearance: none;
+}
+
+input.checkbox-menu[type="checkbox"]:checked~div.menu-block {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-icon {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0.5em;
+    vertical-align: middle;
+}
+
+.menu-block {
+    display: inline-block;
+    opacity: 0;
+    vertical-align: middle;
+    visibility: hidden;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+ul.navUL {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navUL li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+ul.navUL li a {
+    color: #999999;
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+}
+
+ul.navUL li a:hover {
+    color: #000000;
+    text-decoration: none;
 }
