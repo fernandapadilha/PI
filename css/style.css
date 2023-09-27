@@ -19,13 +19,42 @@
 
 header {
     display: grid;
+    grid-template-columns: 1fr 1.5fr 5fr;
     background-color: #021F59;
     box-shadow: 0px 3px 10px white;
+    align-items: center;
+}
+
+nav{
+    margin: auto;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 5px 10px;
+
 }
 
 #logo {
+    margin: auto;
     height: 60px;
 }
+
+.folha-pdf {
+    width: 45%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 3cm 2cm 2cm 3cm;
+    line-height: 1.5;
+  }
 
 .titulo1 {
     font-size: 12pt;
@@ -40,18 +69,23 @@ header {
     text-align: center;
   }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
+.p-simples {
+    line-height: 1.5;
+    font-size: 12pt;
+    text-indent: 1cm;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
 }
 
-
-#margem {
+.p-referencia {
+    line-height: 1.5;
+    font-size: 12pt;
+    text-indent: 0cm;
     text-align: justify;
-    margin-left: 25%;
-    margin-right: 5%;
-    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 2%;
 }
 
@@ -133,32 +167,17 @@ nav {
 }
 
 
-main {
+.menu-index {
     display: grid;
-    grid-template-columns: 3fr 1fr 1.5fr;
-    margin: 25px 100px 25px 100px;
-
-
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 0 0 10%
 }
 
-.bx-menu {
-    margin: 20px; 
-    font-size: 45px;
-    color: white;
-
+.topicos2 {
+    padding: 15px;
 }
 
-.bx-medal {
-    margin: 20px;
-    font-size: 45px;
-    color: white;
-}
-
-p {
-    font-size: 19px;
-}
-
-#cortitulo {
+.cortitulo {
     color: #08004d;
     text-decoration: none;
 }
@@ -189,15 +208,7 @@ p {
     margin: 25px 100px 25px 100px;
 }
 
-.p-simples {
-    line-height: 1.5;
-    font-size: 12pt;
-    text-indent: 1cm;
-    text-align: justify;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
-}
+
 
 
 
@@ -207,57 +218,4 @@ p {
 
 #imagem-secundaria {
     margin: 2%;
-}
-
-
-.menu {
-    list-style: none;
-    float: right;
-
-}
-
-.menu li {
-    position: relative;
-    float: right;
-}
-
-.menu li a {
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-}
-
-
-.menu li a:hover {
-    background: #171b5f;
-    border-radius: 10px;
-    color: #fff;
-    -webkit-box-shadow: 0 2px  12px 0 #cccccc50;
-}
-
-.menu li ul {
-    position: absolute;
-    top: 25px;
-    right: 0;
-    background-color: #fff;
-    display: none;
-}
-
-.menu li:hover ul,
-.menu li.over ul {
-    display: block;
-}
-
-.menu li ul li {
-    border: 1px solid #c0c0c0;
-    display: block;
-    width: 150px;
-}
-
-.header {
-    margin: 10px;
-}
-
-div#1 {
-    display: inline-block;
 }
