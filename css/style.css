@@ -23,14 +23,20 @@ header {
     box-shadow: 0px 3px 10px white;
 }
 
+ul,
+li {
+    padding-top: 10px;
+    display: table-row;
+}
+
 #logo {
     height: 60px;
 }
 
 h1 {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    text-align: center;    
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .bx-medal {
@@ -45,7 +51,7 @@ nav {
 }
 
 div {
-    margin-top: 10px;
+    margin-top: 0px;
     text-align: center;
 }
 
@@ -161,7 +167,8 @@ p {
 }
 
 #cortitulo {
-    color: #2953A6;
+    color: #08004d;
+    text-decoration: none;
 }
 
 #tamanho {
@@ -203,4 +210,57 @@ p {
 
 #imagem-secundaria {
     margin: 2%;
+}
+
+
+.menu {
+    list-style: none;
+    float: right;
+
+}
+
+.menu li {
+    position: relative;
+    float: right;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+
+.menu li a:hover {
+    background: #171b5f;
+    border-radius: 10px;
+    color: #fff;
+    -webkit-box-shadow: 0 2px  12px 0 #cccccc50;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+.header {
+    margin: 10px;
+}
+
+div#1 {
+    display: inline-block;
 }
