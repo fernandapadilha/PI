@@ -5,35 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovation Insider</title>
+
+    <title>Estudando o Português</title>
+
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="boxicons.min.css">
-    <link rel="shortcut icon" href="../faviacon/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../java/script.js">
+    <link rel="shortcut icon" href="../faviacon/logob.png" type="image/x-icon">
 </head>
 
 <body>
-    <header id="titulo">
+    <header>
         <nav class="nav-bar">
             <div><img id="logo" src="../faviacon/logow.png" alt="LOGO"></i>
             </div>
+            <h1 id="tituloprincipal">Estudando o Português</h1>
             <div>
-                <h1 id="tituloprincipal">Estudando o Português</h1>
-            </div>
-            <div class="mobile-menu-icon">
-                <button onclick="menuAbre()" class="bx bx-menu"></button>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="sambaqui.html" class="nav-link">Sambaqui</a></li>
+                    <li><a href="preconceito.html" class="nav-link">Preconceito Linguístico</a></li>
+                    <li><a href="historia.html" class="nav-link">História do Português</a></li>
+                    <li><a href="variacao.html" class="nav-link">Variação Linguística</a>
+                    </li>
+                </ul>
             </div>
         </nav>
-        <div class="">
-            <ul id="nav-UL">
-                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="sambaqui.html" class="nav-link">Sambaqui</a></li>
-                <li class="nav-item"><a href="preconceito.html" class="nav-link">Preconceito Linguístico</a></li>
-                <li class="nav-item"><a href="historia.html" class="nav-link">História do Português</a></li>
-                <li class="nav-item"><a href="variacao.html" class="nav-link">Variação Linguística</a>
-                </li>
-            </ul>
-        </div>
     </header>
     <main id="main-secundario">
         <div>
@@ -91,18 +87,6 @@
             <a id="botao" href="https://www.netflix.com/br/" target="_blank">ASSINE AGORA</a>
         </div>
     </main>
-
-    <script>
-        function menuAbre() {
-            let menu = document.querySelector('.mobile-menu');
-            if (menu.classList.contains('open')) {
-                menu.classList.remove('open');
-            }
-            else {
-                menu.classList.add('open');
-            }
-        }
-    </script>
 </body>
 
 </html>
