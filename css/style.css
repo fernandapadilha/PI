@@ -59,6 +59,20 @@ nav {
   height: 4rem;
 }
 
+.grid-container {
+  margin: 0 0 -4rem 0;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  display: grid;
+}
+
+.grid-item {
+  border: 0.1rem solid var(--cor3);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  font-family: var(--font);
+}
+
 .folha-pdf {
   width: 70%;
   margin: 0 auto;
@@ -74,20 +88,6 @@ nav {
     padding: 3cm 2cm 2cm 3cm;
     line-height: 1.5;
   } */
-
-.grid-container {
-  margin: 0 0 -4rem 0;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  display: grid;
-}
-
-.grid-item {
-  border: 0.1rem solid var(--cor3);
-  border-radius: 0.25rem;
-  padding: 1rem;
-  font-family: var(--font);
-}
 
 .titulo1 {
   font-size: 12pt;
