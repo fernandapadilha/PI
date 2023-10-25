@@ -43,7 +43,7 @@ nav {
   font-size: 1.15rem;
   color: white;
   font-weight: 400;
-  display: grid;
+  display: flex;
 }
 
 .menu {
@@ -76,7 +76,7 @@ nav {
 .folha-pdf {
   width: 70%;
   margin: 0 auto;
-  padding: 3cm 2cm 2cm 3cm;
+  padding: 5% 1% 5% 1%;
   line-height: 1.5;
 }
 
@@ -90,13 +90,13 @@ nav {
   } */
 
 .titulo1 {
-  font-size: 12pt;
+  font-size: 21pt;
   padding-bottom: 1.5;
   text-align: center;
 }
 
 .titulo2 {
-  font-size: 12pt;
+  font-size: 19pt;
   padding-top: 1.5;
   padding-bottom: 20px;
   text-align: center;
@@ -104,7 +104,7 @@ nav {
 
 .p-simples {
   line-height: 1.5;
-  font-size: 12pt;
+  font-size: 15pt;
   text-indent: 1cm;
   text-align: justify;
   margin-left: 10%;
@@ -114,7 +114,7 @@ nav {
 
 .p-referencia {
   line-height: 1.5;
-  font-size: 12pt;
+  font-size: 15pt;
   text-indent: 0cm;
   text-align: justify;
   margin-left: 10%;
@@ -163,5 +163,59 @@ nav {
 
   #tituloprincipal {
     font-size: 1rem;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .folha-pdf {
+    width: 100%;
+    margin: auto;
+    padding: 1cm 0 0 0 ;
+    line-height: 1.5;
+  }
+
+  .titulo1 {
+    font-size: 12pt;
+    padding-bottom: 1.5;
+    text-align: center;
+  }
+  
+  .titulo2 {
+    font-size: 12pt;
+    padding-top: 1.5;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .p-simples{
+    font-size: 12pt;
+  }
+
+  .p-referencia{
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 830px){
+  
+  .folha-pdf {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10% 20% 1% 1%;
+    line-height: 1.5;
+  }
+  .titulo1 {
+    font-size: 12pt;
+    padding-bottom: 1.5;
+    text-align: center;
+  }
+  
+  .titulo2 {
+    font-size: 12pt;
+    padding-top: 1.5;
+    padding-bottom: 20px;
+    text-align: center;
   }
 }
