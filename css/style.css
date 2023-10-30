@@ -59,6 +59,7 @@ nav {
   height: 4rem;
 }
 
+
 .grid-container {
   margin: 0 0 -4rem 0;
   gap: 1.5rem;
@@ -104,7 +105,7 @@ nav {
 
 .p-simples {
   line-height: 1.5;
-  font-size: 15pt;
+  font-size: 13pt;
   text-indent: 1cm;
   text-align: justify;
   margin-left: 10%;
@@ -114,7 +115,7 @@ nav {
 
 .p-referencia {
   line-height: 1.5;
-  font-size: 15pt;
+  font-size: 13pt;
   text-indent: 0cm;
   text-align: justify;
   margin-left: 10%;
@@ -165,6 +166,15 @@ nav {
     font-size: 1rem;
   }
 
+  header {
+    width: 87%;
+  }
+
+  #checkbox-menu {
+    position: absolute;
+    opacity: 0;
+  }
+
   .nav-link {
     display: none;
   }
@@ -172,7 +182,7 @@ nav {
   .folha-pdf {
     width: 100%;
     margin: auto;
-    padding: 1cm 0 0 0 ;
+    padding: 1cm 0 0 0;
     line-height: 1.5;
   }
 
@@ -181,7 +191,7 @@ nav {
     padding-bottom: 1.5;
     text-align: center;
   }
-  
+
   .titulo2 {
     font-size: 12pt;
     padding-top: 1.5;
@@ -189,17 +199,90 @@ nav {
     text-align: center;
   }
 
-  .p-simples{
+  .p-simples {
     font-size: 12pt;
   }
 
-  .p-referencia{
+  .p-referencia {
     font-size: 12pt;
   }
+  .footer {
+    display: block;
+    margin-top: 6rem;
+    padding: 1.5rem;
+    position: absolute;
+  }
+
+  .container {
+    display: flex;
+    margin: -12px -3px 0 0;
+  }
+  
+  #checkbox-menu {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 1.5rem;
+    width: 1rem;
+  }
+  
+  label span {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 155%;
+    border-radius: 30px;
+    background: white;
+    transition: 0.25s ease-in-out;
+  }
+  
+  label span:nth-child(1) {
+    top: 0;
+  }
+  label span:nth-child(2) {
+    top: 0.5rem;
+  }
+  label span:nth-child(3) {
+    top: 1rem;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 0.5rem;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 0.5rem;
+  }
+
+  .grid-container{
+    margin: 0 0 -4rem 0;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    display: grid;
+  }
+
+  .grid-item {
+    border: 0.1rem solid var(--cor3);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-family: var(--font);
+    
+  }
+
 }
 
-@media screen and (max-width: 830px){
-  
+@media screen and (max-width: 830px) {
   .folha-pdf {
     width: 70%;
     margin: 0 auto;
@@ -211,11 +294,63 @@ nav {
     padding-bottom: 1.5;
     text-align: center;
   }
-  
+
   .titulo2 {
     font-size: 12pt;
     padding-top: 1.5;
     padding-bottom: 20px;
     text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: right;
+  }
+  
+  #checkbox-menu {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 1.5rem;
+    width: 1rem;
+  }
+  
+  label span {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 155%;
+    border-radius: 30px;
+    background: white;
+    transition: 0.25s ease-in-out;
+  }
+  
+  label span:nth-child(1) {
+    top: 0;
+  }
+  label span:nth-child(2) {
+    top: 0.5rem;
+  }
+  label span:nth-child(3) {
+    top: 1rem;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 0.5rem;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 0.5rem;
   }
 }
